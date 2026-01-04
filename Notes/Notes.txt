@@ -1,0 +1,2 @@
+Typescript : 
+            It is an statictype checking
