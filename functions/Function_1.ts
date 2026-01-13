@@ -40,9 +40,34 @@ function errormessage(errmesg : string) : string{
     const heros = ["Iron Man", "Captian"];
     heros.map((hero) =>{
          return `Heros are ${hero}`;
-    });
+    });     
 
+
+
+
+    interface ADD { // this are the function signature where we can use it multiple time as per our need because the 
+        (a : number , b : number ) : number; // return type the parameters are the same and can be use multiple times
+    } // It use in the interfacae because the interface because the object stores the multiple proprties according to user requirment
+    // Here we see as we are using only for the function so that the property is being formed according to the function 
+    // Interface is like forming the property of the object 
+    const add : ADD = (x , y ) => x + y;
+    console.log(add(5 , 4));
+
+    const add2 : ADD  =  (x , y)=>{
+            return x + y
+    }
+    console.log(add2(5 , 23 ));
+
+
+    function addMultiple(x : number ,  y : number , z :ADD) :  number {
+            return z(x  , y);
+    }
+
+    console.log(addMultiple(5 , 78 ,add2));
+
+
+    function UsingNeverKeyword(a : number , b : number) : never { // The used of the never keyword is for the fucntion which never return anything 
+            throw new Error("Sample Error occuered"); // The function which is in the infinte loop  and the function is having nothing in that
+    } 
 
     
-
-

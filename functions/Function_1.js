@@ -30,3 +30,15 @@ var heros = ["Iron Man", "Captian"];
 heros.map(function (hero) {
     return "Heros are ".concat(hero);
 });
+// Here we see as we are using only for the function so that the property is being formed according to the function 
+// Interface is like forming the property of the object 
+var add = function (x, y) { return x + y; };
+console.log(add(5, 4));
+var add2 = function (x, y) {
+    return x + y;
+};
+console.log(add2(5, 23));
+function addMultiple(x, y, z) {
+    return z(x, y);
+}
+console.log(addMultiple(5, 78, add2));
