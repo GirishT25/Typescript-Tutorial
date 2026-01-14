@@ -40,8 +40,14 @@ if(Girish.isAdmin === true){
 
 }
 
-let multivalueArray : (number | string | boolean) [] = []; // multivalue array . It is also called an the 
+let multivalueArray : (number | string | boolean) [] = []; // multivalue array . It is also called an the union operator 
 multivalueArray.push("Girish");
 multivalueArray.push(25);
 multivalueArray.push(true); 
 console.log(multivalueArray);
+
+let seatAllotment : "aisle" | "middle" | "window"; 
+
+seatAllotment = "aisle";
+ 
+// seatAllotment = "Crew" // This will show an error because the value is not in the union type
