@@ -27,6 +27,3 @@ console.log(hcseat);
 for (const element of seatChoice) {
     console.log(element);   
 }
-
-
-
