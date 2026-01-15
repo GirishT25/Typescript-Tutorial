@@ -10,4 +10,4 @@ function add(a : number , b : number) : number {
 console.log(add(5 , 4));
 
 console.log(add(10 , 5));
-  
+console.log("HELLO WORLD");
